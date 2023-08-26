@@ -1,4 +1,5 @@
-__import__("os").system("pip install requests")
+__import__("ctypes").windll.kernel32.SetConsoleTitleW('TreviMalwareScanner by eltrevii')
+__import__("os").system("pip install --no-warn-script-location requests")
 
 import os, requests as re, zipfile as zf, hashlib as hl
 from io import BytesIO
@@ -7,7 +8,7 @@ from tkinter.filedialog import askopenfilename as aof
 
 def main():
 	clear()
-	
+
 	print("downloading hashes...")
 	hashes_req   = re.get("https://bazaar.abuse.ch/export/txt/md5/full/").content
 

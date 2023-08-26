@@ -1,4 +1,3 @@
 # trevi's malware scanner
 
-> **note**
-> nothing
+> **note** nothing
